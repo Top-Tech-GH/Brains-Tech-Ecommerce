@@ -1,0 +1,1 @@
+export const api_url= 'http://192.168.12.111:8000/api/machine'
