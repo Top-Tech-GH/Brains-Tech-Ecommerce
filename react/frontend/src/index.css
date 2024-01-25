@@ -5,3 +5,7 @@
 .hide-scrollbar::-webkit-scrollbar {
     display: none;
   }
+
+.login_img_section {
+  background: linear-gradient(rgba(2,2,2,.7),rgba(0,0,0,.7)),url('./assets/bg.jpg') center center;
+}

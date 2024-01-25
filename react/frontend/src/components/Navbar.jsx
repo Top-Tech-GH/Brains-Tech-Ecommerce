@@ -1,5 +1,6 @@
 import logo from "../assets/react.svg"
 import vitelogo from "../assets/vite.svg"
+import djangologo from "../assets/django.svg"
 
 const Navbar = () => {
     return ( 
@@ -105,6 +106,7 @@ const Navbar = () => {
                             <a href="/" className="flex">
                                 <img className="h-16 w-16 my-4 animate-spin" src={logo} alt="GIF" />
                                 <img className="h-16 w-16 my-4 animate-pulse" src={vitelogo} alt="GIF" />
+                                <img className="h-16 w-16 ml-4 my-4 animate-pulse" src={djangologo} alt="GIF" />
                             </a>
                             <li className="">
                                 <a href="/" className="p-2 hover:animate-bounce text-black dark:text-white flex w-full items-center hover:border-r-4 focus:border-r-4  hover:text-[#89ccf8] hover:border-r-[#89ccf8] focus:text-[#aed6f1] focus:border-r-[#89ccf8] active:text-[#aed6f1] active:border-r-4  active:border-r-[#89ccf8]">
@@ -119,9 +121,9 @@ const Navbar = () => {
                                 </a>
                             </li>
                             <li className="">
-                                <a href="#" className="p-2 hover:animate-bounce text-black dark:text-white flex w-full items-center hover:border-r-4 focus:border-r-4  hover:text-[#89ccf8] hover:border-r-[#89ccf8] focus:text-[#aed6f1] focus:border-r-[#89ccf8] active:text-[#aed6f1] active:border-r-4  active:border-r-[#89ccf8]">
+                                <a href="/add-product" className="p-2 hover:animate-bounce text-black dark:text-white flex w-full items-center hover:border-r-4 focus:border-r-4  hover:text-[#89ccf8] hover:border-r-[#89ccf8] focus:text-[#aed6f1] focus:border-r-[#89ccf8] active:text-[#aed6f1] active:border-r-4  active:border-r-[#89ccf8]">
                                     <i className="fa-solid fa-user-group mr-8"></i>
-                                    <span className="">Community</span>
+                                    <span className="">Add product</span>
                                 </a>
                             </li>
                             <hr className="border-gray-700  dark:border-gray-200 opacity-50 ml-12 mr-16" />

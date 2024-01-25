@@ -4,6 +4,7 @@ import LandingPage from './Landing';
 import NotFound from './404';
 import Products from './AllProduct';
 import ProductDetails from './ProductDetails';
+import AddProduct from './AddProduct';
 
 // import SearchFilter from "./SearchFilter";
 
@@ -19,6 +20,9 @@ const Holder = () => {
                 </Route>
                 <Route exact path='/product-details/:id'>
                 <ProductDetails />
+                </Route>
+                <Route exact path='/add-product'>
+                <AddProduct />
                 </Route>
                 <Route path='*'>
                 <NotFound />

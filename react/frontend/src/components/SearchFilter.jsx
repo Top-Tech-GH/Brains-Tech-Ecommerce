@@ -8,7 +8,7 @@ const SearchFilter = () => {
         <div className="hide-scrollbar">
             <div className="pt-20 px-5">
                 <form action="" method="POST">
-                    <div className="p-3 flex items-center space-x-1 border-2 border-dashed border-[#53ade9]">
+                    <div className="p-3 flex items-center space-x-1 border-2 border-dashed border-black dark:border-white">
                         <i className="fas fa-magnifying-glass fa-lg text-black dark:text-[#9faebd]"></i>
                         <input className="w-48 px-2 py-[4px] bg-[#1c2733] dark:bg-[#364350] rounded-3xl focus:outline-none" placeholder="search by title" autoComplete="off" type="text" name="search" id="search-input" onInput={(e) => handelInput(e.target.value)} />
                     </div>

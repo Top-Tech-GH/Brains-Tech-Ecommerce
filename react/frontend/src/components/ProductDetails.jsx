@@ -2,9 +2,27 @@ import { useParams } from "react-router-dom";
 import { api_url } from "../other/ConstDeclare";
 import useFetchData_From_Custom_API from "../other/FetchData";
 import Footer from "./Footer";
+import Loaderdark from "../assets/1488.gif";
+import Loaderlight from "../assets/light_mode.gif";
+import { useEffect, useState } from 'react';
 
 const ProductDetails = () => {
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
+  useEffect(() => {
+    const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+
+    const handleColorSchemeChange = (event) => {
+      setIsDarkMode(event.matches);
+    };
+
+    setIsDarkMode(darkModeMediaQuery.matches);
+    darkModeMediaQuery.addListener(handleColorSchemeChange);
+
+    return () => {
+      darkModeMediaQuery.removeListener(handleColorSchemeChange);
+    };
+  }, []);
   const { id } = useParams()
   const {data: products, isPending, err}= useFetchData_From_Custom_API(`${api_url}/${id}`)
 
@@ -25,7 +43,11 @@ const ProductDetails = () => {
                         </div>}
                 {isPending &&<div className="h-screen bg-white dark:bg-[#364350]">
                                 <div className="flex justify-center items-center h-full">
-                                  <i className="fa-solid fa-spinner fa-spin-pulse dark:text-white text-7xl"></i>
+                                {isDarkMode ? (
+                                    <img src={Loaderdark} />
+                                  ) : (
+                                    <img src={Loaderlight} />
+                                  )}
                                 </div>
                               </div>}
         {products && <div className="container px-5 py-24 mx-auto">
