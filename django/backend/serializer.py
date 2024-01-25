@@ -5,6 +5,7 @@ class MachineSerializer(serializers.ModelSerializer):
     class Meta:
         model= Machine
         fields= (
+            'id',
             'uu_id',
             'machineName', 
             'machinePrice',
@@ -18,3 +19,13 @@ class MachineSerializer(serializers.ModelSerializer):
             'user',
             'dt'
             )
+
+class CategorySerializer(serializers.ModelSerializer):
+    class Meta:
+        model= MachineCategory
+        fields= ('name')
+
+class BrandSerializer(serializers.ModelSerializer):
+    class Meta:
+        model= MachineBrand
+        fields= ('name')

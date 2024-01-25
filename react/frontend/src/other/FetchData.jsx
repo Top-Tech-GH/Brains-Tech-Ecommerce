@@ -8,8 +8,8 @@ const useFetchData_From_Custom_API = (url) => {
     useEffect(() => {
         const abortControll= new AbortController();
         
-        setTimeout(() => {
-            fetch(url, {signal: abortControll.signal})
+        setTimeout(async() => {
+            await fetch(url, {signal: abortControll.signal})
             .then(response => {
                 if(!response.ok){
                     throw Error('There was an error please try again....')

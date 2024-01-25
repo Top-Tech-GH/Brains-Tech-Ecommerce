@@ -1,3 +1,6 @@
+import logo from "../assets/react.svg"
+import vitelogo from "../assets/vite.svg"
+
 const Navbar = () => {
     return ( 
      <div>
@@ -98,63 +101,67 @@ const Navbar = () => {
                 <!-- Navbar for md and above screens --> */}
                 <nav className="hidden text-white h-screen rounded-xl md:flex flex-col justify-between">
                     <div className="pl-4">
-                        <ul className="space-y-2 pt-32 ">
+                        <ul className="space-y-2 ">
+                            <a href="/" className="flex">
+                                <img className="h-16 w-16 my-4 animate-spin" src={logo} alt="GIF" />
+                                <img className="h-16 w-16 my-4 animate-pulse" src={vitelogo} alt="GIF" />
+                            </a>
                             <li className="">
-                                <a href="link" className="p-2 hover:animate-bounce text-black flex w-full items-center hover:border-r-4 focus:border-r-4  hover:text-[#89ccf8] hover:border-r-[#89ccf8] focus:text-[#aed6f1] focus:border-r-[#89ccf8] active:text-[#aed6f1] active:border-r-4  active:border-r-[#89ccf8]">
+                                <a href="/" className="p-2 hover:animate-bounce text-black dark:text-white flex w-full items-center hover:border-r-4 focus:border-r-4  hover:text-[#89ccf8] hover:border-r-[#89ccf8] focus:text-[#aed6f1] focus:border-r-[#89ccf8] active:text-[#aed6f1] active:border-r-4  active:border-r-[#89ccf8]">
                                     <i className="fas fa-house mr-8"></i>
                                     <span className="">Home</span>
                                 </a>
                             </li>
                             <li className="">
-                                <a href="#" className="p-2 hover:animate-bounce text-black flex w-full items-center hover:border-r-4 focus:border-r-4  hover:text-[#89ccf8] hover:border-r-[#89ccf8] focus:text-[#aed6f1] focus:border-r-[#89ccf8] active:text-[#aed6f1] active:border-r-4  active:border-r-[#89ccf8]">
+                                <a href="/all-products" className="p-2 hover:animate-bounce text-black dark:text-white flex w-full items-center hover:border-r-4 focus:border-r-4  hover:text-[#89ccf8] hover:border-r-[#89ccf8] focus:text-[#aed6f1] focus:border-r-[#89ccf8] active:text-[#aed6f1] active:border-r-4  active:border-r-[#89ccf8]">
                                     <i className="fa-regular fa-compass fa-lg mr-8"></i>
-                                    <span className="">Discovery</span>
+                                    <span className="">Produucts</span>
                                 </a>
                             </li>
                             <li className="">
-                                <a href="#" className="p-2 hover:animate-bounce text-black flex w-full items-center hover:border-r-4 focus:border-r-4  hover:text-[#89ccf8] hover:border-r-[#89ccf8] focus:text-[#aed6f1] focus:border-r-[#89ccf8] active:text-[#aed6f1] active:border-r-4  active:border-r-[#89ccf8]">
+                                <a href="#" className="p-2 hover:animate-bounce text-black dark:text-white flex w-full items-center hover:border-r-4 focus:border-r-4  hover:text-[#89ccf8] hover:border-r-[#89ccf8] focus:text-[#aed6f1] focus:border-r-[#89ccf8] active:text-[#aed6f1] active:border-r-4  active:border-r-[#89ccf8]">
                                     <i className="fa-solid fa-user-group mr-8"></i>
                                     <span className="">Community</span>
                                 </a>
                             </li>
-                            <hr className="border-gray-700 opacity-50 ml-12 mr-16" />
+                            <hr className="border-gray-700  dark:border-gray-200 opacity-50 ml-12 mr-16" />
                         </ul>
                         <ul className="space-y-2 pt-4 ">
                             <li className="">
-                                <a href="#" className="p-2 hover:animate-bounce text-black flex w-full items-center hover:border-r-4 focus:border-r-4  hover:text-[#89ccf8] hover:border-r-[#89ccf8] focus:text-[#aed6f1] focus:border-r-[#89ccf8] active:text-[#aed6f1] active:border-r-4  active:border-r-[#89ccf8]">
+                                <a href="#" className="p-2 hover:animate-bounce text-black dark:text-white flex w-full items-center hover:border-r-4 focus:border-r-4  hover:text-[#89ccf8] hover:border-r-[#89ccf8] focus:text-[#aed6f1] focus:border-r-[#89ccf8] active:text-[#aed6f1] active:border-r-4  active:border-r-[#89ccf8]">
                                     <i className="fa-solid fa-clock-rotate-left mr-8"></i>
                                     <span className="">Recent</span>
                                 </a>
                             </li>
                             <li className="">
-                                <a href="link" className="p-2 hover:animate-bounce text-black flex w-full items-center hover:border-r-4 focus:border-r-4  hover:text-[#89ccf8] hover:border-r-[#89ccf8] focus:text-[#aed6f1] focus:border-r-[#89ccf8] active:text-[#aed6f1] active:border-r-4  active:border-r-[#89ccf8]">
+                                <a href="link" className="p-2 hover:animate-bounce text-black dark:text-white flex w-full items-center hover:border-r-4 focus:border-r-4  hover:text-[#89ccf8] hover:border-r-[#89ccf8] focus:text-[#aed6f1] focus:border-r-[#89ccf8] active:text-[#aed6f1] active:border-r-4  active:border-r-[#89ccf8]">
                                     <i className="fa-regular fa-bookmark fa-lg mr-8"></i>
                                     <span className="">My list</span>
                                 </a>
                             </li>
                             <li className="">
-                                <a href="#" className="p-2 hover:animate-bounce text-black flex w-full items-center hover:border-r-4 focus:border-r-4  hover:text-[#89ccf8] hover:border-r-[#89ccf8] focus:text-[#aed6f1] focus:border-r-[#89ccf8] active:text-[#aed6f1] active:border-r-4  active:border-r-[#89ccf8]">
+                                <a href="#" className="p-2 hover:animate-bounce text-black dark:text-white flex w-full items-center hover:border-r-4 focus:border-r-4  hover:text-[#89ccf8] hover:border-r-[#89ccf8] focus:text-[#aed6f1] focus:border-r-[#89ccf8] active:text-[#aed6f1] active:border-r-4  active:border-r-[#89ccf8]">
                                     <i className="fa-regular fa-star fa-lg mr-8"></i>
                                     <span className="">Top rated</span>
                                 </a>
                             </li>
                             <li className="">
-                                <a href="#" className="p-2 hover:animate-bounce text-black flex w-full items-center hover:border-r-4 focus:border-r-4  hover:text-[#89ccf8] hover:border-r-[#89ccf8] focus:text-[#aed6f1] focus:border-r-[#89ccf8] active:text-[#aed6f1] active:border-r-4  active:border-r-[#89ccf8]">
+                                <a href="#" className="p-2 hover:animate-bounce text-black dark:text-white flex w-full items-center hover:border-r-4 focus:border-r-4  hover:text-[#89ccf8] hover:border-r-[#89ccf8] focus:text-[#aed6f1] focus:border-r-[#89ccf8] active:text-[#aed6f1] active:border-r-4  active:border-r-[#89ccf8]">
                                     <i className="fa-regular fa-circle-down fa-lg mr-8"></i>
                                     <span className="">Downloads</span>
                                 </a>
                             </li>
-                            <hr className="border-gray-700 opacity-50 ml-12 mr-16"/>
+                            <hr className="border-gray-700 dark:border-gray-200 opacity-50 ml-12 mr-16"/>
                         </ul>
                         <ul className="space-y-2 pt-4 ">
                             <li className="">
-                                <a href="#" className="p-2 hover:animate-bounce text-black flex w-full items-center hover:border-r-4 focus:border-r-4  hover:text-[#89ccf8] hover:border-r-[#89ccf8] focus:text-[#aed6f1] focus:border-r-[#89ccf8] active:text-[#aed6f1] active:border-r-4  active:border-r-[#89ccf8]">
+                                <a href="#" className="p-2 hover:animate-bounce text-black dark:text-white flex w-full items-center hover:border-r-4 focus:border-r-4  hover:text-[#89ccf8] hover:border-r-[#89ccf8] focus:text-[#aed6f1] focus:border-r-[#89ccf8] active:text-[#aed6f1] active:border-r-4  active:border-r-[#89ccf8]">
                                     <i className="fa-solid fa-gear mr-8"></i>
                                     <span className="">Settings</span>
                                 </a>
                             </li>
                             <li className="">
-                                <a href="#" className="p-2 hover:animate-bounce text-black flex w-full items-center hover:border-r-4 focus:border-r-4  hover:text-[#89ccf8] hover:border-r-[#89ccf8] focus:text-[#aed6f1] focus:border-r-[#89ccf8] active:text-[#aed6f1] active:border-r-4  active:border-r-[#89ccf8]">
+                                <a href="#" className="p-2 hover:animate-bounce text-black dark:text-white flex w-full items-center hover:border-r-4 focus:border-r-4  hover:text-[#89ccf8] hover:border-r-[#89ccf8] focus:text-[#aed6f1] focus:border-r-[#89ccf8] active:text-[#aed6f1] active:border-r-4  active:border-r-[#89ccf8]">
                                     <i className="fa-regular fa-circle-question fa-lg mr-8"></i>
                                     <span className="">Help</span>
                                 </a>
@@ -164,7 +171,7 @@ const Navbar = () => {
                     <div className="pl-4">
                         <ul className="pb-32">
                             <li className="">
-                                <a href="{% url 'logout' %}" className="p-2 hover:animate-bounce text-black flex w-full items-center hover:border-r-4 focus:border-r-4  hover:text-[#89ccf8] hover:border-r-[#89ccf8] focus:text-[#aed6f1] focus:border-r-[#89ccf8] active:text-[#aed6f1] active:border-r-4  active:border-r-[#89ccf8]">
+                                <a href="{% url 'logout' %}" className="p-2 hover:animate-bounce text-black dark:text-white flex w-full items-center hover:border-r-4 focus:border-r-4  hover:text-[#89ccf8] hover:border-r-[#89ccf8] focus:text-[#aed6f1] focus:border-r-[#89ccf8] active:text-[#aed6f1] active:border-r-4  active:border-r-[#89ccf8]">
                                     <i className="fa-solid fa-right-to-bracket fa-rotate-180 mr-8 fa-lg"></i>
                                     <span className="">Logout</span>
                                 </a>
