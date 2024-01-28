@@ -9,3 +9,27 @@
 .login_img_section {
   background: linear-gradient(rgba(2,2,2,.7),rgba(0,0,0,.7)),url('./assets/bg.jpg') center center;
 }
+
+.textCustom{
+  @apply mb-4 rounded-3xl h-10 px-5 text-white bg-black bg-opacity-45 dark:bg-opacity-40 border-2 border-transparent hover:border-white hover:border-opacity-30;
+  /* background: rgba(255, 255, 255, 0.08); */
+}
+
+input[type=text]:-webkit-autofill{
+-webkit-background-clip: text;
+-webkit-text-fill-color: #fff;
+  background: rgba(255, 255, 255, 0.425);
+transition: background-color 5000s ease-in-out 0s;
+}
+input[type=password]:-webkit-autofill{
+-webkit-background-clip: text;
+-webkit-text-fill-color: #fff;
+  background: rgba(255, 255, 255, 0.425);
+transition: background-color 5000s ease-in-out 0s;
+}
+input[type=email]:-webkit-autofill{
+-webkit-background-clip: text;
+-webkit-text-fill-color: #fff;
+  background: rgba(255, 255, 255, 0.425);
+transition: background-color 5000s ease-in-out 0s;
+}

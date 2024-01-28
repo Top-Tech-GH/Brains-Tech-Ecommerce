@@ -50,8 +50,8 @@ const ProductDetails = () => {
                                   )}
                                 </div>
                               </div>}
-        {products && <div className="container px-5 py-24 mx-auto">
-            <div className="lg:w-4/5 mx-auto flex flex-wrap">
+        {products && <div className="container px-5 sm:py-16 py-24 mx-auto">
+            <div className="lg:w-4/5 mx-auto grid grid-cols-1 md:flex flex-wrap">
             <img alt="ecommerce" className="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src={products.machineImage} />
             <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
               <h2 className="text-sm title-font text-gray-800 dark:text-gray-200 tracking-widest">BRAND NAME</h2>

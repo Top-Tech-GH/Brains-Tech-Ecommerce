@@ -18,10 +18,10 @@ const Cards = (props) => {
                     </div>
                 </div>
                 <div className="bg-white dark:bg-[#364350] py-4 px-3">
-                    <h3 className="text-xs mb-2 font-medium">Des cadeaux incroyables prêts à être utilisés dans votre prochain projet</h3>
+                    <h3 className="text-xs mb-2 font-medium text-gray-700 dark:text-white">Des cadeaux incroyables prêts à être utilisés dans votre prochain projet</h3>
                     <div className="flex justify-between items-center">
                         <p className="text-xs text-gray-400">
-                        {product.machineName}
+                        {product.machineName} &nbsp;&nbsp;&nbsp; ${product.machinePrice}
                     </p>
                         <div className="relative z-40 flex items-center gap-2">
                             <a className="text-orange-600 hover:text-blue-500" href="">
